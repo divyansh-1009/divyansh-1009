@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 270" width="540" height="270">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.2" result="cb"/>
+      <feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="gpink">
+      <feGaussianBlur stdDeviation="3" result="cb"/>
+      <feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg  { fill: url(#bg); }
+      .b1  { fill: none; stroke: #00e5ff; stroke-width: 1.3; opacity: .45; }
+      .b2  { fill: none; stroke: #f72585; stroke-width: .5; opacity: .18; }
+      .ttl { font-family: "Courier New",monospace; font-size: 11.5px; fill: #f72585; letter-spacing: 2.5px; filter: url(#gpink); }
+      .lbl { font-family: "Courier New",monospace; font-size: 10.5px; fill: #8b949e; }
+      .val { font-family: "Courier New",monospace; font-size: 24px; font-weight: bold; filter: url(#glow); }
+      .sep { stroke: #21262d; stroke-width: 1; }
+      .ts  { font-family: "Courier New",monospace; font-size: 8.5px; fill: #3d444d; }
+      .dot { fill: none; stroke-width: 1; opacity: .6; }
+    </style>
+  </defs>
+  <rect class="bg" width="540" height="270" rx="10"/>
+  <rect class="b1" x="3" y="3" width="534" height="264" rx="8"/>
+  <rect class="b2" x="7" y="7" width="526" height="256" rx="6"/>
+  <circle cx="18" cy="18" r="3" class="dot" stroke="#00e5ff"/>
+  <circle cx="522" cy="18" r="3" class="dot" stroke="#00e5ff"/>
+  <circle cx="18" cy="252" r="3" class="dot" stroke="#00e5ff"/>
+  <circle cx="522" cy="252" r="3" class="dot" stroke="#00e5ff"/>
+  <text class="ttl" x="270" y="30" text-anchor="middle">[ GITHUB ANALYTICS ]</text>
+  <line class="sep" x1="270" y1="44" x2="270" y2="248"/>
+  <line class="sep" x1="18" y1="157" x2="522" y2="157"/>
+  <text class="val" x="135" y="97" text-anchor="middle" fill="#00e5ff">590</text>
+  <text class="lbl" x="135" y="119" text-anchor="middle">Total Contributions</text>
+  <text class="val" x="405" y="97" text-anchor="middle" fill="#f72585">283</text>
+  <text class="lbl" x="405" y="119" text-anchor="middle">Contributions This Year</text>
+  <text class="val" x="135" y="204" text-anchor="middle" fill="#a855f7">27</text>
+  <text class="lbl" x="135" y="226" text-anchor="middle">Max Contributions in a Day</text>
+  <text class="val" x="405" y="204" text-anchor="middle" fill="#00ff9f">47</text>
+  <text class="lbl" x="405" y="226" text-anchor="middle">Repos Contributed To</text>
+  <text class="ts" x="270" y="261" text-anchor="middle">Real-time · Updated: 2026-07-13 20:38 UTC</text>
+</svg>

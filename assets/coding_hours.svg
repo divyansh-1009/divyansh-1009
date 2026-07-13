@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" width="540" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="barCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="barPink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f72585" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f72585" stop-opacity=".55"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.2" result="cb"/>
+      <feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="gpink">
+      <feGaussianBlur stdDeviation="4" result="cb"/>
+      <feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .bg   { fill: url(#bg); }
+      .b1   { fill: none; stroke: #00e5ff; stroke-width: 1.3; opacity: .45; }
+      .b2   { fill: none; stroke: #f72585; stroke-width: .5; opacity: .18; }
+      .ttl  { font-family: "Courier New",monospace; font-size: 11.5px; fill: #f72585; letter-spacing: 2.5px; filter: url(#gpink); }
+      .axis { stroke: #21262d; stroke-width: 1; }
+      .grid { stroke: #21262d; stroke-width: .6; opacity: .6; }
+      .lbl  { font-family: "Courier New",monospace; font-size: 11px; fill: #8b949e; }
+      .lblN { font-family: "Courier New",monospace; font-size: 11px; fill: #f72585; font-weight: bold; filter: url(#glow); }
+      .pct  { font-family: "Courier New",monospace; font-size: 12px; fill: #00e5ff; font-weight: bold; }
+      .pctN { font-family: "Courier New",monospace; font-size: 13px; fill: #f72585; font-weight: bold; filter: url(#glow); }
+      .cap  { font-family: "Courier New",monospace; font-size: 10.5px; fill: #8b949e; }
+      .dot  { fill: none; stroke-width: 1; opacity: .6; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="540" height="300" rx="10"/>
+  <rect class="b1" x="3" y="3" width="534" height="294" rx="8"/>
+  <rect class="b2" x="7" y="7" width="526" height="286" rx="6"/>
+  <circle cx="18" cy="18" r="3" class="dot" stroke="#00e5ff"/>
+  <circle cx="522" cy="18" r="3" class="dot" stroke="#00e5ff"/>
+  <circle cx="18" cy="282" r="3" class="dot" stroke="#00e5ff"/>
+  <circle cx="522" cy="282" r="3" class="dot" stroke="#00e5ff"/>
+
+  <text class="ttl" x="270" y="32" text-anchor="middle">[ COMMIT ACTIVITY BY TIME OF DAY ]</text>
+
+  <!-- gridlines -->
+  <line class="grid" x1="55" y1="90" x2="500" y2="90"/>
+  <line class="grid" x1="55" y1="130" x2="500" y2="130"/>
+  <line class="grid" x1="55" y1="170" x2="500" y2="170"/>
+  <line class="grid" x1="55" y1="210" x2="500" y2="210"/>
+
+  <!-- baseline -->
+  <line class="axis" x1="55" y1="250" x2="500" y2="250"/>
+
+  <!-- Morning bar -->
+  <rect x="90" y="220" width="52" height="30" rx="4" fill="url(#barCyan)"/>
+  <text class="pct" x="116" y="210" text-anchor="middle">8%</text>
+  <text class="lbl" x="116" y="270" text-anchor="middle">Morning</text>
+
+  <!-- Afternoon bar -->
+  <rect x="200" y="195" width="52" height="55" rx="4" fill="url(#barCyan)"/>
+  <text class="pct" x="226" y="185" text-anchor="middle">15%</text>
+  <text class="lbl" x="226" y="270" text-anchor="middle">Afternoon</text>
+
+  <!-- Evening bar -->
+  <rect x="310" y="155" width="52" height="95" rx="4" fill="url(#barCyan)"/>
+  <text class="pct" x="336" y="145" text-anchor="middle">27%</text>
+  <text class="lbl" x="336" y="270" text-anchor="middle">Evening</text>
+
+  <!-- Night bar (peak, highlighted) -->
+  <rect x="420" y="75" width="52" height="175" rx="4" fill="url(#barPink)" filter="url(#gpink)"/>
+  <text class="pctN" x="446" y="63" text-anchor="middle">50%</text>
+  <text class="lblN" x="446" y="270" text-anchor="middle">Night 🦇</text>
+
+  <text class="cap" x="270" y="291" text-anchor="middle">Peak commits: 12AM – 4AM · Batman by night, confirmed by data</text>
+</svg>
