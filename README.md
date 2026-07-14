@@ -27,7 +27,7 @@
 
 <p align="center">
   <!-- ANIME_QUOTE_START -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=4000&color=F72585&center=true&vCenter=true&multiline=true&width=900&height=60&lines=%22If+all+you+ever+do+is+look+down+on+people%2C;you+won%27t+be+able+to+recognize+your+own+weaknesses.%22" alt="Anime Quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=1000&color=F72585&center=true&vCenter=true&multiline=true&width=900&height=60&lines=%22If+all+you+ever+do+is+look+down+on+people%2C;you+won%27t+be+able+to+recognize+your+own+weaknesses.%22" alt="Anime Quote" />
   <!-- ANIME_QUOTE_END -->
 </p>
 
