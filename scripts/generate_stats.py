@@ -14,7 +14,7 @@ import sys
 import requests
 from datetime import datetime, timezone
 
-USERNAME = "divyansh-1009"
+USERNAME = "schizophrenicmaniac"
 OUTPUT_PATH = "assets/github_stats.svg"
 GH_GRAPHQL = "https://api.github.com/graphql"
 

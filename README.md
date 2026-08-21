@@ -79,8 +79,8 @@
 </p>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/divyansh-1009/divyansh-1009/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" width="49%" alt="Most Used Languages" />
-  <img src="https://raw.githubusercontent.com/divyansh-1009/divyansh-1009/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" width="49%" alt="Repos Per Language" />
+  <img src="https://raw.githubusercontent.com/schizophrenicmaniac/schizophrenicmaniac/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" width="49%" alt="Most Used Languages" />
+  <img src="https://raw.githubusercontent.com/schizophrenicmaniac/schizophrenicmaniac/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" width="49%" alt="Repos Per Language" />
 </div>
 
 <br/>
